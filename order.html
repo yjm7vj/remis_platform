@@ -24,159 +24,189 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      /* Order Options darker background */
+      .order-options-section {
+        background: #151515 !important;
+        background-image: url(images/bg_4.jpg) !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        position: relative;
+      }
+
+      .order-options-section .overlay {
+        background: rgba(0, 0, 0, 0.55) !important;
+      }
+
+      .order-options-section .container {
+        position: relative;
+        z-index: 2;
+      }
+
+      .order-options-section h2,
+      .order-options-section h3,
+      .order-options-section p {
+        color: #ffffff !important;
+      }
+
+      .order-options-section .heading a {
+        color: #ffffff !important;
+        text-decoration: none;
+      }
+
+      .order-options-section .heading a:hover {
+        color: #fac564 !important;
+        text-decoration: none;
+      }
+
+      .service-image-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+      }
+
+      .service-image-link img {
+        transition: transform 0.3s ease;
+      }
+
+      .service-image-link:hover img {
+        transform: scale(1.08);
+      }
+
+      .order-options-section .services .icon img.service-img {
+        width: 70px !important;
+        height: 70px !important;
+        max-width: 70px !important;
+        max-height: 70px !important;
+        object-fit: contain;
+        display: block;
+      }
+    </style>
   </head>
+
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-		      <a class="navbar-brand" href="index.html"><img src="images/remis_logo_final.png" alt="Remis Pizzeria and Lounge" style="max-height: 80px;"></a>
+		      <a class="navbar-brand" href="index.html">
+            <img src="images/remis_logo_final.png" alt="Remis Pizzeria and Lounge" style="max-height: 80px;">
+          </a>
+
 		      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 		        <span class="oi oi-menu"></span> Menu
 		      </button>
+
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 	          <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
 	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-
 	          <li class="nav-item"><a href="about.html" class="nav-link">Contact</a></li>
-			  
-	          <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
 	        </ul>
-			<a href="contact.html" class="btn order-btn p-3 px-xl-4 py-xl-3">Order Now</a>
+
+			    <a href="contact.html" class="btn order-btn p-3 px-xl-4 py-xl-3">Order Now</a>
 	      </div>
 		  </div>
 	  </nav>
     <!-- END nav -->
 
     <section class="home-slider owl-carousel img" style="background-image: url(images/bg_1.jpg);">
-
       <div class="slider-item" style="background-image: url(images/bg_3.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center">
-
             <div class="col-md-7 col-sm-12 text-center ftco-animate">
-            	<h1 class="mb-3 mt-5 bread">Services</h1>
-	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Services</span></p>
+            	<h1 class="mb-3 mt-5 bread">Order Now</h1>
+	            <p class="breadcrumbs">
+                <span class="mr-2"><a href="index.html">Home</a></span>
+                <span>Services</span>
+              </p>
             </div>
-
           </div>
         </div>
       </div>
     </section>
     
+    <!-- ORDER OPTIONS SECTION -->
+    <section class="ftco-section ftco-services order-options-section">
+      <div class="overlay"></div>
 
-    <section class="ftco-section ftco-services">
-    	<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-3">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
-            <h2 class="mb-4">Our Services</h2>
-            <p>Remis Pizzeria and Lounge serves Martinsburg with fresh pizza, shawarma, carryout favorites, and convenience store essentials while honoring the legacy of Bob's Carry Out.</p>
+            <h2 class="mb-4">Order Options</h2>
+            <p>Order delicious Remis directly from us, through DoorDash, or through Uber Eats.</p>
           </div>
         </div>
-    		<div class="row">
+
+        <div class="row">
+
+          <!-- Order With Us -->
           <div class="col-md-4 ftco-animate">
             <div class="media d-block text-center block-6 services">
               <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-diet"></span>
+                <a href="https://online.skytab.com/s/remispizzeriaandlounge" target="_blank" rel="noopener noreferrer" class="service-image-link">
+                  <img src="images/remi_logo.png" alt="Remis" class="service-img">
+                </a>
               </div>
+
               <div class="media-body">
-                <h3 class="heading">Fresh Food &amp; Essentials</h3>
-                <p>Pizza, shawarma, drinks, snacks, and daily convenience items make Remis a practical neighborhood stop.</p>
+                <h3 class="heading">
+                  <a href="https://online.skytab.com/s/remispizzeriaandlounge" target="_blank" rel="noopener noreferrer">Order With Us</a>
+                </h3>
+                <p>Order Remis directly through our website. Click above to place your order.</p>
               </div>
-            </div>      
+            </div>
           </div>
+
+          <!-- DoorDash -->
           <div class="col-md-4 ftco-animate">
             <div class="media d-block text-center block-6 services">
               <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-bicycle"></span>
+                <a href="https://www.doordash.com/store/remis-pizzeria-and-lounge-martinsburg-46613787/112245951/?preview=1" target="_blank" rel="noopener noreferrer" class="service-image-link">
+                  <img src="images/ddash.png" alt="DoorDash" class="service-img">
+                </a>
               </div>
+
               <div class="media-body">
-                <h3 class="heading">Carryout &amp; Delivery</h3>
-                <p>Call ahead or stop by for hot meals made for busy Martinsburg families, workers, and students.</p>
+                <h3 class="heading">DoorDash</h3>
+                <p>Order delicious Remis through DoorDash for fast and convenient delivery. Click above to access DoorDash.</p>
               </div>
-            </div>      
+            </div>
           </div>
+
+          <!-- Uber Eats -->
           <div class="col-md-4 ftco-animate">
             <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5"><span class="flaticon-pizza-1"></span></div>
-              <div class="media-body">
-                <h3 class="heading">Bob's Carry Out Legacy</h3>
-                <p>We honor a trusted local name by keeping dependable food, warm service, and community support alive.</p>
+              <div class="icon d-flex justify-content-center align-items-center mb-5">
+                <a href="YOUR_UBEREATS_LINK_HERE" target="_blank" rel="noopener noreferrer" class="service-image-link">
+                  <img src="images/uber.png" alt="Uber Eats" class="service-img">
+                </a>
               </div>
-            </div>    
+
+              <div class="media-body">
+                <h3 class="heading">Uber Eats</h3>
+                <p>Order delicious Remis through Uber Eats for fast and convenient delivery. Click above to access Uber Eats.</p>
+              </div>
+            </div>
           </div>
+
         </div>
-    	</div>
+      </div>
     </section>
 
-    <section class="ftco-section">
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center">
-            <h2 class="mb-4">Local Favorites</h2>
-            <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
-            <p class="mt-5">A quick look at customer favorites from the Remis menu, all built around fresh food and local service.</p>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-3 text-center ftco-animate">
-      			<div class="menu-wrap">
-      				<a href="#" class="menu-img img mb-4" style="background-image: url(images/pizza-1.jpg);"></a>
-      				<div class="text">
-      					<h3><a href="menu.html">Cheese Pizza</a></h3>
-      					<p>Classic mozzarella cheese on house tomato sauce, baked fresh in four sizes.</p>
-      					<p class="price"><span>From $8.99</span></p>
-      					<p><a href="menu.html" class="btn btn-white btn-outline-white">View Menu</a></p>
-      				</div>
-      			</div>
-      		</div>
-      		<div class="col-md-3 text-center ftco-animate">
-      			<div class="menu-wrap">
-      				<a href="#" class="menu-img img mb-4" style="background-image: url(images/pizza-2.jpg);"></a>
-      				<div class="text">
-      					<h3><a href="menu.html">Chicken Shawarma</a></h3>
-      					<p>Marinated rotisserie chicken with garlic sauce, pickles, and tomatoes in pita.</p>
-      					<p class="price"><span>$10.99</span></p>
-      					<p><a href="menu.html" class="btn btn-white btn-outline-white">View Menu</a></p>
-      				</div>
-      			</div>
-      		</div>
-      		<div class="col-md-3 text-center ftco-animate">
-      			<div class="menu-wrap">
-      				<a href="#" class="menu-img img mb-4" style="background-image: url(images/pizza-3.jpg);"></a>
-      				<div class="text">
-      					<h3><a href="menu.html">Buffalo Wings</a></h3>
-      					<p>Crispy wings tossed in classic medium buffalo sauce with ranch or blue cheese.</p>
-      					<p class="price"><span>$12.99</span></p>
-      					<p><a href="menu.html" class="btn btn-white btn-outline-white">View Menu</a></p>
-      				</div>
-      			</div>
-      		</div>
-      		<div class="col-md-3 text-center ftco-animate">
-      			<div class="menu-wrap">
-      				<a href="#" class="menu-img img mb-4" style="background-image: url(images/pizza-4.jpg);"></a>
-      				<div class="text">
-      					<h3><a href="menu.html">Classic Cheeseburger</a></h3>
-      					<p>A 1/3 lb beef patty with American cheese, lettuce, tomato, onion, and pickle.</p>
-      					<p class="price"><span>$9.99</span></p>
-      					<p><a href="menu.html" class="btn btn-white btn-outline-white">View Menu</a></p>
-      				</div>
-      			</div>
-      		</div>
-    		</div>
-    	</div>
-    </section>
+    
 
     <footer class="ftco-footer ftco-section img">
     	<div class="overlay"></div>
       <div class="container">
         <div class="row mb-5">
+
           <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">About Us</h2>
@@ -188,6 +218,7 @@
               </ul>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
              <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Services</h2>
@@ -199,6 +230,7 @@
               </ul>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
             <div class="ftco-footer-widget mb-4">
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
@@ -211,37 +243,39 @@
 	            </div>
             </div>
           </div>
+
         </div>
+
         <div class="row">
           <div class="col-md-12 text-center">
-
-              <p>Copyright &copy; 2026 Remis Pizzeria and Lounge LLC. All rights reserved.</p>
+            <p>Copyright &copy; 2026 Remis Pizzeria and Lounge LLC. All rights reserved.</p>
           </div>
         </div>
       </div>
     </footer>
     
-  
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+      </svg>
+    </div>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="js/main.js"></script>
-    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
